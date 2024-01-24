@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <form class="signIn">
+        <div class="emailContainer">
+            <input type="text" class="mailId" placeholder="Email address or phone number" required>
+            <p class="idError er"></p>
+        </div>
+        <div class="passwordSignIn">
+            <input type="text" class="passbox" placeholder="Password" required >
+        <p class="passwordError er"></p>
+        </div>
+        <button id="login">Log In</button>
+        
+    </form>
+    <container>
+        <button class="newAccount">Create new Account</button>
+    </container>
+
+    <section class="signUp">
+        <div class="close">&times;</div>
+        <div></div>
+        <form id="signUpForm">
+            <div class="nameContainer">
+                <input type="text" class="name" placeholder="Enter your name" required>
+                <div class="nameError er"></div>
+            </div>
+            <div class="mailContainer">
+                <input type="text" class="mailSignUp" placeholder="Mobile number or email address" required>
+                <div class="mailError er"></div>
+            </div>
+            <div class="passwordSignUp">
+                <input type="text" class="password" placeholder="New Password" required>
+                <div class="strength"></div>
+                <input type="text" class="confirmPass" placeholder="Confirm Password" required>
+                <div class="passmatch er"></div>
+            </div>
+            <button id="signUpBtn">Sign Up</button>
+        </form>
+
+
+
+    </section>
+
+
+    <script src="/main.js">
+
+    </script>
+</body>
+</html>
