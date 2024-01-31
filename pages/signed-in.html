@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChanduX</title>
+    <link rel="stylesheet" href="/assets/css/signed-in.css" />
+  </head>
+  <body>
+    <nav class="container">
+      <logo>ChanduX</logo>
+      <div>
+        <ul>
+          <li class="post">Post</li>
+          <li class="store" onclick="display()">Store</li>
+          <li onclick="localStorage.setItem('loggedin',false)">Sign Out</li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="postSection">
+      <input class="title" placeholder="Title" />
+      <input class="textArea" placeholder="Description" />
+      <button class="postbtn">Post</button>
+      <button class="close">Close</button>
+    </section>
+    <div class="displayContent"></div>
+
+    <section class="storeSection">
+      <div class="catTitle">Categories</div>
+      <container class="catBox">
+        <ul>
+          <button class="men">Men</button>
+          <button class="women">Women</button>
+          <button class="ec">Electronics</button>
+          <button class="jewels">Jewelery</button>
+        </ul>
+      </container>
+    </section>
+
+    <script src="/assets/js/signed-in.js"></script>
+  </body>
+</html>
