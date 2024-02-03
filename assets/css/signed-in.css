@@ -90,31 +90,7 @@ nav ul li:hover::after{
   margin-left:100px ;
   background-color: rgb(135, 8, 8);
 }
-.g1{
-  
-  background-color: bisque;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  
-}
-.imgContainer{
- width: 300px;
- height: 300px;
-  background-color: blueviolet;
-  
-  
-}
-.g1pic{
-   
-   
-  height: 100%;
-  width: 100%;
-  
-  
-}
+
 .displayContent{
 display: flex;
 justify-content: space-between;

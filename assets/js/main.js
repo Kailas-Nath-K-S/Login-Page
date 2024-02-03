@@ -117,7 +117,7 @@ console.log(result.length)
 
  const createAccount=document.querySelector('.newAccount');
  createAccount.addEventListener('click',()=>{
-    signUpBox.style.display='block'
+    signUpBox.style.display='flex'
  })
  const close =  document.querySelector('.close');
    close.addEventListener('click',()=>

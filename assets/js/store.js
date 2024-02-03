@@ -1,6 +1,7 @@
 const storeSection = document.querySelector(".storeSection");
 const categoryTitle = document.querySelector(".catTitle");
-const categories = document.querySelector(".tabs");
+
+const btnContainer = document.querySelector(".btnContainer");
 
 const menBtn = document.querySelector(".men");
 const womenBtn = document.querySelector(".women");
@@ -9,71 +10,71 @@ const jewelBtn = document.querySelector(".jewels");
 const displayContent = document.querySelector(".displayContent");
 
 menBtn.addEventListener("click", async () => {
-  const datas = await fetch(
+  const data = await fetch(
     "https://fakestoreapi.com/products/category/men's clothing"
   );
-  const result = await datas.json();
-
+  const result = await data.json();
+displayContent.innerHTML=''
   result.forEach((element) => {
     const exp = `
-      <div class="g1"> 
+      <div class="product"> 
       <div class="imgContainer">
-            <img class="g1pic" src="${element.image}">
+            <img class="img" src="${element.image}">
             </div>
-           
-            <div class="itemTitle">${element.title}</div>
-            <div class="itemPrice">$${element.price}</div>
-
+           <div class="productInfo">
+            <div class="productTitle">${element.title}</div>
+            <div class="productPrice">$${element.price}</div>
+        </div>
         </div>
       
       
       `;
     displayContent.innerHTML += exp;
-    storeSection.style.display = "none";
+   
   });
 });
 
 womenBtn.addEventListener("click", async () => {
-  const datas = await fetch(
+  const data = await fetch(
     "https://fakestoreapi.com/products/category/women's clothing"
   );
-  const result = await datas.json();
-
+  const result = await data.json();
+  displayContent.innerHTML=''
   result.forEach((element) => {
     const exp = `
-      <div class="g1"> 
+      <div class="product"> 
       <div class="imgContainer">
-            <img class="g1pic" src="${element.image}">
+            <img class="img" src="${element.image}">
             </div>
-           
-            <div class="itemTitle">${element.title}</div>
-            <div class="itemPrice">$${element.price}</div>
-
+            <div class="productInfo">
+            <div class="productTitle">${element.title}</div>
+            <div class="productPrice">$${element.price}</div>
+            </div>
         </div>
       
       
       `;
     displayContent.innerHTML += exp;
-    storeSection.style.display = "none";
+    
   });
 });
 
 elecBtn.addEventListener("click", async () => {
-  const datas = await fetch(
+  const data = await fetch(
     "https://fakestoreapi.com/products/category/electronics"
   );
-  const result = await datas.json();
-
+  const result = await data.json();
+  displayContent.innerHTML=''
   result.forEach((element) => {
     const exp = `
-      <div class="g1"> 
+      <div class="product"> 
       <div class="imgContainer">
-            <img class="g1pic" src="${element.image}">
+            <img class="img" src="${element.image}">
             </div>
-           
-            <div class="itemTitle">${element.title}</div>
-            <div class="itemPrice"$${element.price}</div>
-
+            <div class="productInfo">
+            <div class="productTitle">${element.title}</div>
+            <div class="productPrice"> $${element.price}</div>
+            </div>
         </div>
       
       
@@ -83,21 +84,21 @@ elecBtn.addEventListener("click", async () => {
 });
 
 jewelBtn.addEventListener("click", async () => {
-  const datas = await fetch(
+  const data = await fetch(
     "https://fakestoreapi.com/products/category/jewelery"
   );
-  const result = await datas.json();
-
+  const result = await data.json();
+  displayContent.innerHTML=''
   result.forEach((element) => {
     const exp = `
-      <div class="g1"> 
+      <div class="product"> 
       <div class="imgContainer">
-            <img class="g1pic" src="${element.image}">
+            <img class="img" src="${element.image}">
             </div>
-           
-            <div class="itemTitle">${element.title}</div>
-            <div class="itemPrice">$${element.price}</div>
-
+            <div class="productInfo">
+            <div class="productTitle">${element.title}</div>
+            <div class="productPrice">$${element.price}</div>
+            </div>
         </div>
 
         
@@ -106,6 +107,6 @@ jewelBtn.addEventListener("click", async () => {
       
       `;
     displayContent.innerHTML += exp;
-    storeSection.style.display = "none";
+    
   });
 });

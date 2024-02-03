@@ -6,7 +6,7 @@ body{
 
 .signUp{
     
-    width: 400px;
+    width: 325px;
     margin: auto;
     background-color:white;
     text-align: center;
@@ -14,6 +14,7 @@ body{
     color: #333;
     display: none;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    position: relative;
     
     }
 
@@ -45,7 +46,8 @@ body{
     font-size: 18px;
     font-weight: 500;
     border-radius: 4px;
-    width: 300PX;
+    width: 100%;
+    
     
 }
 .er{
@@ -57,25 +59,49 @@ body{
     
 }
 .close{
-    color: #750e0e;
+    color:black;
   position: absolute;
   font-size: 30px;
   font-weight: bold;
+  right: 2px;
+  top: 1px;
 
+ 
 }
 .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
-  cursor: pointer;
+  cursor: pointer; 
+  background-color:  #e30505;
+  opacity: 0.76;
+  
+  font-size: 36px;
 }
 
-.signIn{
+.signInContainer{
+display: flex;
 
+
+    margin-top: 100px   ;
+    justify-content: center;
+  
     
-    margin:0 auto;
-    align-items: center;
 }
 .newAccount{
     
 }
+.signIn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.loginBtnContainer{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
